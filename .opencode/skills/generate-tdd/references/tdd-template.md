@@ -1,4 +1,4 @@
-# Template de TDD
+﻿# Template de TDD
 
 Ajuste o nível de detalhe ao porte do projeto. Quando uma seção não se
 aplicar, mantenha o título e registre "Não aplicável" com uma justificativa
@@ -334,6 +334,17 @@ externas por ambiente.>
 | QA-001 | <questão> | <opções> | <responsável> | <critério> |
 
 ## 17. Roadmap de implementação
+
+<Descreva como o roadmap foi derivado: fases sequenciais de fundação, MVP e
+eventuais fases complementares/evolução, com entregável, dependências e critérios
+de aceite verificáveis por fase. Cada fase deve nascer de uma decisão registrada
+(DEC-XXX) ou de um requisito aprovado (RF/RNF) e conter um critério de aceite
+verificável.>
+
+<O roadmap faz parte integrante do TDD gerado: toda geração deve produzir esta
+seção com as fases da implementação. Não a omita por escopo reduzido, e não a
+apresente como "Não aplicável" sem justificativa. Fases sem critério de aceite
+verificável devem ser registradas como decisão em aberto, não promovidas.>
 
 | Fase | Entregável | Dependências | Critérios de aceite |
 | --- | --- | --- | --- |

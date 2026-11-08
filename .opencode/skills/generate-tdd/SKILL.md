@@ -1,11 +1,13 @@
 ---
 name: Generate TDD
-description: Gera um Technical Design Document (TDD) detalhado e pronto para implementação a partir de um PRD, ideia, requisito ou documento existente. Conduz uma entrevista de decisões arquiteturais e estruturais (linguagem, framework, bibliotecas, dados, integrações, segurança, deploy) e centraliza as decisões técnicas em docs/tdd/. Use quando o usuário pedir um TDD, documento de design técnico, design de arquitetura, decisões técnicas ou plano técnico.
+description: Gera um Technical Design Document (TDD) detalhado e pronto para implementação a partir de um PRD, ideia, requisito ou documento existente. Conduz uma entrevista de decisões arquiteturais e estruturais (linguagem, framework, bibliotecas, dados, integrações, segurança, deploy) e centraliza as decisões técnicas em docs/tdd/. Inclui o roadmap de implementação com as fases da implementação. Use quando o usuário pedir um TDD, documento de design técnico, design de arquitetura, decisões técnicas, plano técnico ou roadmap de implementação.
 ---
 
 # Generate TDD
 
 Produza um **Technical Design Document (TDD)** detalhado, consistente com o contexto real do projeto e pronto para orientar a implementação. O TDD é a fonte única das decisões técnicas: toda escolha de arquitetura, linguagem, framework, biblioteca, dados, integração e operação deve estar registrada e justificada nele.
+
+Todo TDD gerado **deve incluir a seção de Roadmap de implementação** com as fases da implementação, com entregável, dependências e critérios de aceite por fase. O roadmap é parte integrante do documento, e não um apêndice opcional.
 
 **Fronteira de atuação:** esta skill escreve apenas o documento de TDD. Não implemente código, não altere código-fonte, configuração ou specs do OpenSpec. O pedido que acionou a skill autoriza somente a criação/atualização do TDD em `docs/tdd/`. Ao terminar, pare e apresente o resultado.
 
@@ -131,6 +133,7 @@ Regras de qualidade:
 - **Dependências justificadas:** toda biblioteca/framework deve ter finalidade, versão, justificativa e decisão associada.
 - **Sem implementação prematura:** descreva arquitetura, contratos, schemas e fluxos; trechos de código apenas quando forem normativos e curtos.
 - **Entrevista registrada:** toda pergunta material feita com a ferramenta `question` e sua resposta devem constar no `Anexo A - Registro da entrevista`, com o efeito no documento.
+- **Roadmap de implementação:** todo TDD deve conter a seção de roadmap com as fases da implementação. Cada fase precisa ter entregável, dependências e critérios de aceite verificáveis; o roadmap deve derivar-se das decisões registradas (`DEC-XXX`) e dos requisitos (`RF/RNF`), e, quando houver PRD de referência, mapear as fases do PRD às fases do roadmap. Fases sem critério de aceite verificável não entram no roadmap final; se houver necessidade de fase sem critério, registre nas questões em aberto.
 
 ### 4.1 Diagramas Mermaid
 
@@ -178,6 +181,7 @@ Confira o checklist:
 - [ ] A matriz de rastreabilidade PRD → TDD está completa?
 - [ ] Riscos têm mitigação ou plano de contingência?
 - [ ] Premissas e decisões em aberto estão registradas e não disfarçadas de fatos?
+- [ ] A seção de roadmap de implementação está presente, com fases, entregáveis, dependências e critérios de aceite coerentes com decisões e rastreabilidade?
 - [ ] O documento está em português (salvo pedido contrário) e sem conteúdo de instruções internas da skill?
 
 ## Passo 6 - Salvar e reportar
@@ -192,6 +196,7 @@ Confira o checklist:
    - Entrevista realizada e decisões confirmadas
    - Principais riscos técnicos
    - Questões abertas que precisam de decisão
+   - Roadmap de implementação incluído com fases, entregáveis, dependências e critérios de aceite
    - Primeira fase recomendada de implementação
 
 ## Guardrails

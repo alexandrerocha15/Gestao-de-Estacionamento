@@ -3,7 +3,7 @@
 | Campo | Valor |
 | --- | --- |
 | Versão | 1.4 |
-| Status | Em revisão |
+| Status | Aprovado |
 | Autor | Agente OpenCode |
 | Data | 2026-11-08 |
 | PRD de referência | [PRD](../prd/prd.md) v1.1 (Aprovado) |
@@ -2095,5 +2095,5 @@ A entrevista foi conduzida com a ferramenta `question` do ambiente, em cinco rod
 | 1.1 | 2026-11-08 | Agente OpenCode | Bloco 1 (C-01 e C-04): D-01 — edição Developer dev/teste, produção comercial exige Standard licenciada; Express descartado (sem Agent/TDE, Windows-only, 10 GB); DEC-020 sem SQL Server Agent via backup-worker cron+sqlcmd; distinção entre retenção operacional de backup (7d/30d) e arquivo mensal por 5 anos; remoção de "Jobs SQL" (ENT-020); QTD-13 de licenciamento. |
 | 1.2 | 2026-11-08 | Agente OpenCode | Bloco 2 (C-02 e C-03): DEC-007/§5.2/§5.5 — tarifa com trigger TR_Tarifa_Sobreposicao + SERIALIZABLE contra sobreposição parcial (409 CONFLITO_VIGENCIA); pagamento com UX_Pagamento_Ativo filtrado WHERE Status='Ativo', trilha pós-estorno e múltiplos comprovantes por cobrança (novo Numero via SEQUENCE), Fig.15 com retorno Estornada->EmAberto->Paga, cenários 21-22 em §11.2 e remoção de UNIQUE simples em Pagamento/Comprovante. |
 | 1.3 | 2026-11-08 | Agente OpenCode | Bloco 3 (A-01 e A-02): D-02 — MVP restrito ao PRD §15 (RF-011/018/024/028/039/044 como pós-MVP Fases 4/5), §2.2 e §17 realinhados, RF-015/016 realocados ao MVP, endpoints pós-MVP marcados em §6.1 e rastreabilidade; DEC-016/§6.1/§8.2 — novo Operacao.Visualizar, busca por nome/documento restrita a Financeiro.VerValores, detalhe sem valores sem VerValores e ticket exigindo Operacao.CheckIn. |
-| 1.4 | 2026-11-08 | Agente OpenCode | Bloco 4 (A-03 e A-04): D-03a — RNF-004/DEC-014 medido só na janela de operação QA-002 (excluindo manutenção), MVP acadêmico apenas com uptime sem SLA formal, SPOF aceito (QTD-09 refeita) e cálculo 99,5%×RTO 4h; D-03b — DEC-028/§5.4 com flag Retention:Enabled=false default, separação operacional (2y) × financeiro (5y), placa por PlacaHash (HMAC) + ResponsavelRef, dry-run e alerta desativado até QA-007. |
+| 1.4 | 2026-11-08 | Agente OpenCode | Bloco 4 (A-03 e A-04): D-03a — RNF-004/DEC-014 medido só na janela de operação QA-002 (excluindo manutenção), MVP acadêmico apenas com uptime sem SLA formal, SPOF aceito (QTD-09 refeita) e cálculo 99,5%×RTO 4h; D-03b — DEC-028/§5.4 com flag Retention:Enabled=false default, separação operacional (2y) × financeiro (5y), placa por PlacaHash (HMAC) + ResponsavelRef, dry-run e alerta desativado até QA-007. Status alterado para Aprovado, pendências de produção mantidas (QTD-13, QA-002, QA-007). |
 
