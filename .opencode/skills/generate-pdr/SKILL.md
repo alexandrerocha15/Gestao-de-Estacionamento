@@ -84,13 +84,13 @@ Regras de uso:
 
 ## Passo 3 - Definir destino do arquivo
 
-1. Derive um slug em kebab-case a partir do nome do produto/funcionalidade (ex.: "Gestão de Estacionamento" -> `gestao-de-estacionamento`).
-2. Destino padrão: `docs/prd/<slug>.md`.
-3. Se o usuário indicou outro caminho ou nome, respeite-o (mantendo-o dentro do projeto, salvo pedido explícito).
-4. Se o arquivo já existir:
+1. Destino padrão: `docs/prd/prd.md`.
+2. Use outro nome ou caminho **somente** se o usuário solicitar isso explicitamente.
+3. Se o arquivo já existir:
    - Leia a versão atual.
-   - Use a ferramenta `question` para perguntar se deve **atualizar** o existente (incrementando a versão no cabeçalho e no changelog) ou **criar um novo** com outro slug.
-   - Nunca sobrescreva silenciosamente.
+   - Atualize o `prd.md` existente por padrão, incrementando a versão no cabeçalho e registrando a mudança no changelog.
+   - Só crie um novo arquivo se o usuário pedir explicitamente; nesse caso, pergunte o nome/caminho desejado.
+   - Nunca sobrescreva silenciosamente: informe claramente que o arquivo existente foi atualizado.
 
 ## Passo 4 - Escrever o PRD
 

@@ -11,3 +11,5 @@ Prompt inicial e contexto fornecido pelo usuário:
 $ARGUMENTS
 
 Se o prompt acima estiver vazio, não invente um produto: use a skill para perguntar ao usuário qual ideia, necessidade ou funcionalidade o PRD deve cobrir.
+
+Salve o PRD por padrão em `docs/prd/prd.md`; use outro nome ou caminho somente se o usuário pedir explicitamente.
