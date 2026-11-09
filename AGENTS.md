@@ -21,3 +21,10 @@ Regras:
 - Na etapa SDD, nenhuma implementação deve começar antes da criação ou atualização, revisão e validação das especificações e tarefas rastreáveis ao PRD e ao TDD.
 - Alterações de escopo ou decisões que invalidem um documento aprovado devem atualizar esse documento antes de avançar.
 - O Pull Request deve demonstrar a rastreabilidade entre requisitos, decisões, design, implementação e testes.
+
+## Branches e integração
+
+- O agente deve executar o fluxo completo — PRD → TDD → SDD → implementação → Pull Request — em uma `feature branch`, nunca diretamente na `main`.
+- A `feature branch` deve concentrar os documentos, as especificações, as tarefas, a implementação e os testes relacionados à mesma mudança.
+- O Pull Request deve ter a `main` como branch de destino e utilizar `.github/pull_request_template.md`.
+- A integração na `main` só deve ocorrer após a revisão e aprovação dos artefatos obrigatórios, a validação do SDD e a aprovação do Pull Request com todas as verificações exigidas concluídas com sucesso.
